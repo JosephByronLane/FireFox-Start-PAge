@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Tab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Firefox_logo%2C_2019.svg/1971px-Firefox_logo%2C_2019.svg.png">
+
+</head>
+<script>
+    function searchGoogle(event) {
+        if (event.keyCode === 13) {
+            const query = document.getElementById('search-input').value;
+            const googleSearchUrl = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+            window.location.href = googleSearchUrl;
+        }
+    }
+</script>
+<body>
+    <div class="root">
+            <div class="main">
+                <div class="search-and-logo">
+                    <div class="logo-and-text">
+                        <div class="logo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Firefox_logo%2C_2019.svg/1971px-Firefox_logo%2C_2019.svg.png" alt="">
+                        </div>
+                        <div class="text">
+                            <p>Firefox</p>
+                        </div>
+                    </div>
+                    <div class="searchbar">
+                        <div class="searchbar-text">
+                            <input type="text" placeholder="Search with Google or enter address" onkeydown="searchGoogle(event)"  id="search-input">
+                        </div>
+                        <div class="searchbar-logo">
+                            <img src="https://companieslogo.com/img/orig/GOOG-0ed88f7c.png?t=1633218227" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="apps">  
+                    <a target="_blank" href="https://login.microsoftonline.com/89c02c95-1149-4fb5-be88-c084007e54f7/oauth2/v2.0/authorize?response_type=id_token&scope=openid%20profile&client_id=5e3ce6c0-2b1f-4285-8d4b-75ee78787346&redirect_uri=https%3A%2F%2Fteams.microsoft.com%2Fgo&state=eyJpZCI6IjYyNmVhOTA4LWEwYWYtNGI4Ni05YjUwLWU0NzU2YjMxNjVjNSIsInRzIjoxNjk0MjAyOTg5LCJtZXRob2QiOiJyZWRpcmVjdEludGVyYWN0aW9uIn0%3D&nonce=a1304151-d485-474c-a291-f6575ab53b91&client_info=1&x-client-SKU=MSAL.JS&x-client-Ver=1.3.4&login_hint=24197141%40modelo.edu.mx&client-request-id=d3ab6aab-2df0-40a5-b945-7f7aab433695&response_mode=fragment">
+                    
+                    <div class="it">
+                        <div class="item">
+                           <img src="https://cdn-icons-png.flaticon.com/512/906/906349.png" alt=""> 
+                        </div>
+                        <p>Teams</p>
+                    </div>
+                    </a>      
+                    <div class="it">
+                        <a target="_blank" href="https://www.youtube.com/"></a>
+                        <div class="item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png" alt="">
+                        </div>
+                        <p>Youtube</p>
+                    </a>
+                    </div>
+                    <div class="it">
+                        <a target="_blank" href="https://www.sidefx.com/">
+                        <div class="item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Houdini3D_icon.png" alt="">
+                        </div>
+                        <p>sidefx</p>
+                    </a>
+                    </div>
+                    <div class="it">
+                        <a target="_blank" href="https://rutracker.org/forum/index.php">
+                        <div class="item">
+                            <img src="https://pbs.twimg.com/media/DL7t7bOXkAEWq-n.jpg" alt="">
+                        </div>
+                        <p>rutracker</p>
+                    </a>
+                    </div>
+                    <div class="it">
+                        <a target="_blank" href="https://outlook.live.com/mail/0/">
+                        <div class="item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Microsoft_Office_Outlook_%282018%E2%80%93present%29.svg/2203px-Microsoft_Office_Outlook_%282018%E2%80%93present%29.svg.png" alt="">
+                        </div>
+                        <p>outlook.live</p>
+                    </a>
+                    </div>
+                    <div class="it">
+                        <a target="_blank" href="http://127.0.0.1:7860/">
+                        <div class="item">
+                            <img src="https://avatars.githubusercontent.com/u/51063788?s=280&v=4" alt="">
+                        </div>
+                        <p>Stable Diffusion</p>
+                    </a>
+                    </div>
+                    <div class="it">
+                        <a target="_blank" href="https://animepahe.ru/">
+                        <div class="item">
+                            <img src="https://pbs.twimg.com/profile_images/1587822716312489985/RDbLTyya_400x400.png" alt="">
+                        </div>
+                        <p>animepahe</p>
+                        </a>    
+                    </div>
+                    <div class="it">
+                        <a target="_blank" href="https://www.reddit.com/">
+                        <div class="item">
+                            <img src="https://www.redditinc.com/assets/images/site/reddit-logo.png" alt="">
+                        </div>
+                        <p>reddit</p>
+                    </a>
+                    </div>
+                </div>
+            </div>
+    </div>
+   
+
+</body>
+</html>
